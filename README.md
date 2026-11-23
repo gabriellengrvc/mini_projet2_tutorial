@@ -62,3 +62,4 @@
 ## Questions: 
 
 - `What happens if we forget to invoke update of the superclass in the update by tuto1?` If you override update() in Tuto1 and leave out super.update(deltaTime), Java runs only that version. If that version is empty, the active area and its actors stop updating.
+- `Why do you think it's better to declare variable game of the Play program as a Game rather than AreaGame?` Game is broader than AreaGame because every AreaGame is a Game, Play implements the methods in Game, and using that type lets it launch more kinds of games not just AreaGame based 
